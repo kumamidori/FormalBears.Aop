@@ -1,0 +1,48 @@
+{
+    "name": "formal-bears/aop",
+    "type": "library",
+    "description": "AOP utility for BEAR.Sunday",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Atsuhiro Kubo",
+            "email": "kubo@iteman.jp"
+        },
+        {
+            "name": "Nana Yamane",
+            "email": "shigematsu.nana@gmail.com"
+        }
+    ],
+    "keywords": [
+        "BEAR.Sunday","FormalBears","AOP"
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "ray/aop": "~2.0",
+        "bear/resource": "~1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "~8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "FormalBears\\Aop\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FormalBears\\Aop\\": "tests"
+        }
+    },
+    "scripts": {
+        "cs": [
+            "php-cs-fixer fix -v --dry-run",
+            "phpcs --standard=./phpcs.xml src"
+        ],
+        "cs-fix": [
+            "php-cs-fixer fix -v",
+            "phpcbf src"
+        ]
+    }
+}
