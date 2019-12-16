@@ -14,7 +14,8 @@ composer require formal-bears/aop:^0.1
 
 ## Feature
 
-- HTTP Method Matcher
+- Equals-to matcher
+- HTTP Method matcher
 
 ## Usage
 
@@ -30,7 +31,7 @@ $this->bindInterceptor(
 ```
 
 リソースインターセプターの用途としては、自分のドメインに合ったフレームワーク（開発基盤）を作りたいときを想定しています。
-tBEARは標準セットで使うこともできますが、拡張に対して開かれているので、フレームワークを作ることもできます。
+BEARは標準セットで使うこともできますが、拡張に対して開かれているので、フレームワークを作ることもできます。
 
 ## Requires
 
@@ -93,3 +94,12 @@ class EqualsToMatcher extends AbstractMatcher
     }
 }
 ```
+
+## Copyright
+
+Copyright (c) 2019 Atsuhiro Kubo, Nana Yamane, All rights reserved.
+
+## License
+
+[The BSD 2-Clause License](http://opensource.org/licenses/BSD-2-Clause)
+
